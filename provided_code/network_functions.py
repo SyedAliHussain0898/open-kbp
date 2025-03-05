@@ -5,8 +5,8 @@ from typing import Optional
 import numpy as np
 import pandas as pd
 from keras.models import load_model
-from keras.optimizers.optimizer_v2.adam import Adam
-
+from keras.optimizers import Adam
+from tensorflow import Tensor as KerasTensor
 from provided_code.data_loader import DataLoader
 from provided_code.network_architectures import DefineDoseFromCT
 from provided_code.utils import get_paths, sparse_vector_function
